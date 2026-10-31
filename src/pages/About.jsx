@@ -1,9 +1,7 @@
 
-import { Link } from 'react-router-dom';
 import './About.css';
 
-import aboutHero from '../assets/About/About01.jpg';
-import storyImage from '../assets/About/About02.jpg';
+import aboutHero from '../assets/91436.jpg';
 import exploreImage from '../assets/About/About03.jpg';
 import discoverImage from '../assets/About/About04.jpg';
 import experienceImage from '../assets/About/About05.jpg';
@@ -40,47 +38,11 @@ function About() {
       </section>
 
 
-      {/* 02. Our Story */}
-      <section className="our-story">
-
-        <div className="story-image-wrapper">
-          <img src={storyImage} alt="A journey through nature" />
-        </div>
-
-        <div className="story-content">
-
-          <p className="about-label">01 — OUR STORY</p>
-
-          <h2>
-            A World Beyond
-            <br />
-            the Map.
-          </h2>
-
-          <p>
-            WildAtlas was created for those who seek more
-            than just a destination. We believe that traveling
-            is about discovering new perspectives, experiencing
-            different cultures, and finding beauty in places
-            both familiar and unknown.
-          </p>
-
-          <p>
-            Through carefully selected destinations and
-            inspiring travel stories, WildAtlas invites you
-            to explore the world with curiosity and an open mind.
-          </p>
-
-        </div>
-
-      </section>
-
-
       {/* 03. Our Philosophy */}
       <section className="our-philosophy">
 
         <div className="philosophy-header">
-          <p className="about-label">02 — OUR PHILOSOPHY</p>
+          <p className="about-label">01 — OUR PHILOSOPHY</p>
 
           <h2>Three Ways to See the World.</h2>
 
@@ -132,47 +94,6 @@ function About() {
 
       </section>
 
-
-      {/* 04. What You'll Find */}
-      <section className="what-youll-find">
-
-        <div className="find-header">
-          <p className="about-label">03 — WHAT YOU'LL FIND</p>
-
-          <h2>Your Guide to Somewhere New.</h2>
-        </div>
-
-        <div className="find-list">
-
-          <div className="find-item">
-            <span>01</span>
-            <h3>Destinations</h3>
-            <p>Discover remarkable places around the world.</p>
-          </div>
-
-          <div className="find-item">
-            <span>02</span>
-            <h3>Travel Stories</h3>
-            <p>Explore stories and inspiration from different journeys.</p>
-          </div>
-
-          <div className="find-item">
-            <span>03</span>
-            <h3>Travel Guides</h3>
-            <p>Find useful insights for your next adventure.</p>
-          </div>
-
-          <div className="find-item">
-            <span>04</span>
-            <h3>Culture & Lifestyle</h3>
-            <p>Experience the traditions and lifestyles of different places.</p>
-          </div>
-
-        </div>
-
-      </section>
-
-
       {/* 05. Closing Section */}
       <section className="about-closing">
 
@@ -186,13 +107,55 @@ function About() {
           The world is full of places to discover and stories
           to experience. Where will your curiosity take you next?
         </p>
-
-        <Link to="/#explore" className="closing-button">
-          START EXPLORING <span>↗</span>
-        </Link>
-
       </section>
 
+        {/* ROLE SELECTION */}
+        <section className="roles-section">
+
+        <div className="roles-grid">
+
+            <article className="role-card">
+            <img src="/images/naturalist.png" alt="Naturalist" />
+            <div className="role-overlay"></div>
+            <div className="role-content">
+                <h3>Naturalist</h3>
+            </div>
+            </article>
+
+            <article className="role-card">
+            <img src="/images/moonshiner.jpg" alt="Moonshiner" />
+            <div className="role-overlay"></div>
+            <div className="role-content">
+                <h3>Moonshiner</h3>
+            </div>
+            </article>
+
+            <article className="role-card">
+            <img src="/images/collector.jpg" alt="Collector" />
+            <div className="role-overlay"></div>
+            <div className="role-content">
+                <h3>Collector</h3>
+            </div>
+            </article>
+
+            <article className="role-card">
+            <img src="/images/bounty-hunter.jpg" alt="Bounty Hunter" />
+            <div className="role-overlay"></div>
+            <div className="role-content">
+                <h3>Bounty Hunter</h3>
+            </div>
+            </article>
+
+            <article className="role-card">
+            <img src="/images/trader.png" alt="Trader / Merchant" />
+            <div className="role-overlay"></div>
+            <div className="role-content">
+                <h3>Trader / Merchant</h3>
+            </div>
+            </article>
+
+        </div>
+        </section>
     </main>
   );
 }

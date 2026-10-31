@@ -1,0 +1,58 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: calc(100% - 80px);
+  max-width: 1400px;
+  min-height: 76px;
+
+  padding: 0 32px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+
+  /* Drop Shadow */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(0, 0, 0, 0.08);
+
+  z-index: 1000;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar-links a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Button */
+.navbar-action a {
+  display: inline-block;
+  padding: 12px 20px;
+
+  background-color: #171717;
+  color: #ffffff;
+
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 13px;
+}
