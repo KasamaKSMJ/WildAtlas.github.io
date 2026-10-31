@@ -1,0 +1,183 @@
+/* Featured Stories Section */
+.featured-stories {
+  width: 100%;
+  padding: 120px 60px;
+  background-color: #ffffff;
+}
+
+/* Section Header */
+.stories-header {
+  max-width: 1400px;
+  margin: 0 auto 50px;
+}
+
+.stories-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.stories-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 500;
+  color: #171717;
+  margin-bottom: 14px;
+}
+
+.stories-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #777;
+}
+
+/* Stories Grid */
+.stories-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: repeat(2, 250px);
+  gap: 20px;
+}
+
+/* Story Card */
+.story-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #e8e8e8;
+  cursor: pointer;
+}
+
+/* Featured Card */
+.story-card-featured {
+  grid-row: span 2;
+}
+
+/* Story Image */
+.story-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+/* Image Hover */
+.story-card:hover .story-image {
+  transform: scale(1.06);
+}
+
+/* Dark Gradient Overlay */
+.story-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+}
+
+/* Story Content */
+.story-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  padding: 30px;
+
+  color: #ffffff;
+  z-index: 1;
+}
+
+.story-category {
+  display: inline-block;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 12px;
+}
+
+.story-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.story-content p {
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 450px;
+}
+
+/* Featured Story Typography */
+.story-card-featured .story-content h3 {
+  font-size: clamp(30px, 3.5vw, 46px);
+}
+
+.story-card-featured .story-content p {
+  font-size: 15px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .featured-stories {
+    padding: 90px 30px;
+  }
+
+  .stories-grid {
+    grid-template-rows: repeat(2, 220px);
+    gap: 16px;
+  }
+
+  .story-content {
+    padding: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .featured-stories {
+    padding: 70px 20px;
+  }
+
+  .stories-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .story-card,
+  .story-card-featured {
+    grid-row: auto;
+    height: 280px;
+  }
+
+  .story-card-featured {
+    height: 380px;
+  }
+
+  .story-card-featured .story-content h3 {
+    font-size: 32px;
+  }
+}
