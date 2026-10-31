@@ -1,0 +1,44 @@
+/* Destination Section */
+.destination {
+  width: 100%;
+  padding: 120px 60px;
+
+  background-color: #ffffff;
+}
+
+/* Header */
+.destination-header {
+  max-width: 1400px;
+  margin: 0 auto 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Label */
+.destination-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  color: #888;
+  margin-bottom: 16px;
+}
+
+/* Heading */
+.destination-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 500;
+
+  color: #171717;
+  margin-bottom: 14px;
+}
+
+/* Description */
+.destination-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #777;
+}
