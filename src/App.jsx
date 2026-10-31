@@ -1,17 +1,34 @@
-import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Destination from './components/Destination.jsx';
 import FeaturedStories from './components/FeaturedStories.jsx';
+import About from './pages/About.jsx';
+
 import './App.css';
 
-function App() {
+function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Destination />
       <FeaturedStories />
     </>
   );
 }
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
 export default App;
